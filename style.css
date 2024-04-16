@@ -1,0 +1,158 @@
+/* forOtherText */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* font-family: "Outfit", sans-serif; */
+/* forTitles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+/* font-family: "Young Serif", serif; */
+
+/* hsl(330, 100%, 98%) for that coloured section  */
+/* hsl(14, 45%, 36%); for other titles */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 1850px;
+    width: 54%;
+    overflow: hidden;
+    padding: 50px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.container img{
+    height: 350px;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Section-1-Intro */
+
+.intro h1{
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", serif;
+    font-size: 40px;
+    word-spacing: 2.5px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.intro p{
+    color: black;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+/* Section-2-Preperation time  */
+
+.preperationTime{
+    font-family: "Outfit", sans-serif;
+    padding: 20px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+}
+
+.preperationTime h3{
+    color:  hsl(332, 51%, 32%);
+}
+
+.preperationTime li{
+    color: hsl(30, 10%, 34%);
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Section-3-Ingredients */
+.ingredients{
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingredients h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+.ingredients li{
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Section-4-Instructions */
+
+.instructions{
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.instructions h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.instructions li{
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    margin-top: 15px;
+    font-weight: 400;
+    
+}
+
+.instructions li::before {
+    content: counter(list-item, decimal); 
+    font-weight: bold; 
+    color: hsl(14, 45%, 36%);
+    margin-right: 15px; 
+}
+
+/* Section-5-Nutrition */
+
+.nutrition p{
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    font-size: 18px;
+}
+
+.nutrition h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nutrition{
+    padding-bottom: 20px;
+}
+
+.nutrition li{
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition b{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 45%;
+    font-weight: bold; 
+    color: hsl(14, 45%, 36%);
+}
